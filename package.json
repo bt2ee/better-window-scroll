@@ -1,0 +1,19 @@
+{
+  "name": "better-window-scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqshada/better-window-scroll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqshada/better-window-scroll/issues"
+  },
+  "homepage": "https://github.com/sqshada/better-window-scroll#readme"
+}
