@@ -2,7 +2,7 @@
   "name": "better-window-scroll",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +11,22 @@
     "url": "git+https://github.com/sqshada/better-window-scroll.git"
   },
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/sqshada/better-window-scroll/issues"
   },
-  "homepage": "https://github.com/sqshada/better-window-scroll#readme"
+  "homepage": "https://github.com/sqshada/better-window-scroll#readme",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.less": [
+      "stylelint **/packages/*.less --fix",
+      "prettier --write"
+    ]
+  }
 }
