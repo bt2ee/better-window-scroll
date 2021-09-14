@@ -2,17 +2,26 @@
   "name": "better-window-scroll",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.min.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.js",
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sqshada/better-window-scroll.git"
   },
   "author": "",
-  "bugs": {
-    "url": "https://github.com/sqshada/better-window-scroll/issues"
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "rollup": "^1.29.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
   },
   "homepage": "https://github.com/sqshada/better-window-scroll#readme",
   "lint-staged": {
